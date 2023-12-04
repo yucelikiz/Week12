@@ -11,12 +11,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/author")
-public class AuthorApi {
+public class AuthorController {
 
     private final AuthorService authorService;
 
     @Autowired
-    public AuthorApi(AuthorService authorService) {
+    public AuthorController(AuthorService authorService) {
         this.authorService = authorService;
     }
 
